@@ -1,0 +1,8 @@
+.body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(transparent 10%, #f5f5f5, #b3e0dc, #81cdc6,#4fb9af, #008080) #f0f4f8;
+}
+.radio-custom:checked + label {
+    background-color: #0ea5e9;
+    color: white;
+}

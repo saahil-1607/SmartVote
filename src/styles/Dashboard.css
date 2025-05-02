@@ -1,0 +1,35 @@
+.body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(transparent 10%, #f5f5f5, #b3e0dc, #81cdc6,#4fb9af, #008080) #f0f4f8;
+    
+}
+.glass-effect {
+    /* background: rgba(218, 225, 225, 0.95); */
+    border: teal solid;
+    border-width: 1px;
+    backdrop-filter: blur(10px);
+}
+.scanner-animation {
+    background: linear-gradient(to bottom, transparent 0%, #008080 50%, transparent 100%);
+    animation: scan 2s linear infinite;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+}
+@keyframes scan {
+    0% { top: 0; }
+    100% { top: 100%; }
+}
+.gradient-text {
+    background: linear-gradient(135deg, #1e5556, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.pulse-ring {
+    animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+@keyframes pulse-ring {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(26, 124, 177, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(14, 154, 197, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(79, 70, 229, 0); }
+}

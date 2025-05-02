@@ -1,0 +1,48 @@
+.home {
+  font-family: 'Poppins', sans-serif;
+  background: url('../assets/voting6.jpg');
+  backdrop-filter: blur(20px);
+  background-size: cover;
+  background-position: center;
+}
+
+.glass-effect1 {
+  position: relative; /* Required for positioning the pseudo-element */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden; /* To prevent content from overflowing the borders */
+}
+
+.glass-effect1::before {
+  content: ""; /* Creates an empty pseudo-element */
+  position: absolute; /* Positions the pseudo-element */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../assets/voting4.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px); /* Apply the blur effect only to the image */
+  z-index: -1; /* Ensures the pseudo-element stays behind the content */
+}
+.fingerprint-scanner1 {
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.fingerprint-scanner1:hover {
+  transform: scale(1.05);
+}
+.scan-animation {
+  animation: scan 2s linear infinite;
+}
+@keyframes scan {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

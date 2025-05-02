@@ -1,0 +1,42 @@
+.gradient-bg {
+    background: linear-gradient(transparent 10%, #f5f5f5, #b3e0dc, #81cdc6,#4fb9af, #008080);
+}
+.glass-effect {
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(1px);
+}
+.glass-effect::before {
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(1px);
+}
+.fingerprint-scanner {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #2a5298;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.scan-line {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #4CAF50;
+    animation: scan 2s linear infinite;
+}
+@keyframes scan {
+    0% { top: 0; }
+    100% { top: 100%; }
+}
+.pulse {
+    animation: pulse 2s infinite;
+}
+.card-border {
+    border: teal solid;
+    border-width: 2px;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
