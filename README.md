@@ -10,7 +10,7 @@ Traditional voting systems suffer from several challenges, including voter imper
 ### **Step 1: Installing the necessary dependencies**
 
 `npm install` <br>
-`npm i react react-router-dom react-icons axios` // _for frontend_ <br>
+`npm i react react-router-dom react-icons recharts axios` // _for frontend_ <br>
 `npm i express mongoose cors body-parser path dotenv bcrypt` // _for backend_ <br>
 `npm i serialport` // _for biometric_ <br>
 `npm i truffle web3` // _for blockchain_ <br>
