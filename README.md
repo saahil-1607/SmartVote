@@ -19,14 +19,24 @@ Install `Ganache` via [Ganache Installation](https://archive.trufflesuite.com/ga
 ### **Step 2: Starting the project**
 
 #### **Part 1: Frontend** <br>
-In the root directory of the project, run the following command
+In the root directory of the project, run the following command <br>
 `npm run dev`
 
 #### **Part 2: Backend** <br>
-`cd server
-npm run server`
+- `cd server` <br>
+- `npm run server`
 
 #### **Part 3: Biometric Setup** <br>
+Connect the `Arduino Mega 2560` with the figerprint module `R307` <br>
+Pin on `R307` - Pin on `Arduino Mega 2560`
+- `RX` - `TX1` // _`pin 18`_
+- `TX` - `RX1` // _`pin 19`_
+- `Ground` - `GND`
+- `5V` - `5V`
+
+Now run the following commands in the terminal
+- `cd biometric`
+- `node server.js`
 
 #### Part 4: **Blockchain Setup** <br>
 1. On `Ganache` create a new workspace.
